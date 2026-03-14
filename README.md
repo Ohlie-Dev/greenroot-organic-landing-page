@@ -1,4 +1,5 @@
  DESIGN INSPIRATION
+ 
 The visual aesthetic was inspired by a minimalist organic design concept from Pinterest. My goal was to take this static inspiration and engineer a pixel-perfect, interactive reality using clean HTML and CSS.
 
 TECHNICAL EXECUTION
