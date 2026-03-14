@@ -1,2 +1,1 @@
-#greenroot
-A fully responsive organic grocery landing page built from scratch using semantic HTML5 and CSS3. Features include a product grid, hero section, and mobile-friendly layout.
+A premium, Pinterest-inspired organic grocery landing page built with HTML5 and CSS3. Features a fully responsive, pixel-perfect layout optimized for high-conversion and performance.
