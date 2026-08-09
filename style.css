@@ -403,7 +403,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* CATEGORY CARDS HOVER EFFECT */
 .category-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

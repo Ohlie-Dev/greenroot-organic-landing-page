@@ -1,24 +1,13 @@
-// ===================================================
-// GreenRoot E-Commerce - Complete Script with Search & Filter
-// ===================================================
-
 document.addEventListener('DOMContentLoaded', () => {
-    // ---------------------------------------------------
-    // CONFIGURATION: Put your WhatsApp phone number here!
-    // ---------------------------------------------------
     const vendorPhoneNumber = "2348012345678"; 
-
-    // Array storing items as objects: { name, price, quantity }
     let cart = [];
 
-    // DOM Elements
     const cartBadge = document.getElementById('cart-badge');
     const addToCartButtons = document.querySelectorAll('.addToCartBtn');
     const cartItemsList = document.getElementById('cart-items-list');
     const cartTotalElement = document.getElementById('cart-total');
     const checkoutBtn = document.querySelector('#cartDrawer .btn-neon');
 
-    // Main function to calculate & render the cart UI
     function updateCartUI() {
         const totalItemsCount = cart.reduce((sum, item) => sum + item.quantity, 0);
         if (cartBadge) {
@@ -66,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cartTotalElement.textContent = `N ${grandTotal.toLocaleString()}`;
         }
 
-        // Event Listeners for Dynamic Cart Controls
         document.querySelectorAll('.decrease-qty').forEach(button => {
             button.addEventListener('click', (e) => {
                 const idx = e.currentTarget.getAttribute('data-index');
@@ -96,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // "Add to Cart" Button Handler
     addToCartButtons.forEach((button) => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
@@ -123,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // WHATSAPP CHECKOUT FUNCTION
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', () => {
             if (cart.length === 0) {
@@ -148,9 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---------------------------------------------------
-    // LIVE SEARCH & CATEGORY FILTERING (For shop.html)
-    // ---------------------------------------------------
     const searchInput = document.getElementById('shop-search');
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productItems = document.querySelectorAll('.product-item');
@@ -177,20 +160,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.add('d-none');
                 }
 
-                // Automatically filter shop.html if coming from categories.html link (e.g. shop.html?category=Fruit)
                 const urlParams = new URLSearchParams(window.location.search);
                 const categoryParam = urlParams.get('category');
 
                if (categoryParam) {
                const targetBtn = document.querySelector(`.filter-btn[data-filter="${categoryParam}"]`);
                if (targetBtn) {
-                targetBtn.click(); // Programmatically clicks the matching category filter!
+                targetBtn.click(); 
                 
         }
     }
             });
 
-            // Toggle "No Products Found" message
             if (noProductsMsg) {
                 if (visibleCount === 0) {
                     noProductsMsg.classList.remove('d-none');
@@ -200,13 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Search Input Listener
         searchInput.addEventListener('input', filterProducts);
 
-        // Filter Button Listener
         filterButtons.forEach(button => {
             button.addEventListener('click', (e) => {
-                // Update active button styling
                 filterButtons.forEach(btn => {
                     btn.classList.remove('btn-dark', 'active');
                     btn.classList.add('btn-light', 'text-muted');
@@ -227,22 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            // Prevent default page reload
             e.preventDefault();
-
-            // Check if all required inputs are filled out correctly
             if (!contactForm.checkValidity()) {
                 alert("enter your details to submit");
                 return;
             }
 
-            // If form is valid and submitted
             alert("thanks for submitting");
 
-            // Hide the entire form container
             contactForm.classList.add('d-none');
 
-            // Optional: Show a replacement thank you message on screen
             const thankYouMsg = document.createElement('div');
             thankYouMsg.className = 'alert alert-success text-center py-4 rounded-4 fw-bold';
             thankYouMsg.innerHTML = 'Thank you! Your message has been received.';
