@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenRoot - Fresh Choices, Better Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav px-2 px-lg-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="brand-logo-accent">G</span>GREENROOT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">  
+                <ul class="navbar-nav mx-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-action-icons d-flex align-items-center gap-3 text-white">
+                    
+                    <a href="#" class="text-white position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-neon text-dark">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero d-flex align-items-center" id="home">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="badge mb-3"><i class="fa-solid fa-sparkles me-2"></i> Premium Quality Guaranteed</div>
+                    <h1 class="hero-title text-white mb-3">Fresh Choices,<br><span class="text-neon">Better Life</span></h1>
+                    <p class="hero-desc text-white-50 mb-4">Quality fruits and vegetables harvested fresh daily to bring robust health and vibrant flavor straight to your family's doorstep.</p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <button class="btn btn-neon px-4 py-2.5 fw-bold"><a class="shop-tag" href="shop.html">Shop Now <i class="fa-solid fa-arrow-right ms-2"></i></a></button>
+                        <button class="btn btn-outline-white px-4 py-2.5"><a class="categories-tag" href="categories.html">Explore Categories</a></button>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 social-proof">
+                        <div class="avatar-group d-flex">
+                            <div class="avatar-placeholder"><img src="img/profile icon.jpg"></div>
+                            <div class="avatar-placeholder"><img src="img/profile icon 3.jpg"></div>
+                            <div class="avatar-placeholder"><img src="img/profile icon 2.jpg"></div>
+                        </div>
+                        <div>
+                            <div class="text-warning fs-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <div class="text-white-50 sm-text">4.9/5 (1,800+ Happy Customers)</div>
+                        </div>
+                    </div>
+                </div>
+       
+                <div class="col-lg-6 position-relative text-center">
+                    <div class="hero-image-wrapper">
+                        <img src="img/hero_vegies.png" class="img-fluid main-hero-img" alt="Fresh Produce Display">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar py-4">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-3 col-6 d-md-flex align-items-center gap-3">
+                    <div class="icon-circle mb-2 mb-md-0"><i class="fa-solid fa-leaf"></i></div>
+                    <div><h6 class="mb-0 text-white fw-bold">100% Natural</h6><small class="text-white-50">Pure organic products</small></div>
+                </div>
+                <div class="col-md-3 col-6 d-md-flex align-items-center gap-3">
+                    <div class="icon-circle mb-2 mb-md-0"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div><h6 class="mb-0 text-white fw-bold">Fast Delivery</h6><small class="text-white-50">Within 24 hours</small></div>
+                </div>
+                <div class="col-md-3 col-6 d-md-flex align-items-center gap-3">
+                    <div class="icon-circle mb-2 mb-md-0"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div><h6 class="mb-0 text-white fw-bold">Secure Payment</h6><small class="text-white-50">100% protected payments</small></div>
+                </div>
+                <div class="col-md-3 col-6 d-md-flex align-items-center gap-3">
+                    <div class="icon-circle mb-2 mb-md-0"><i class="fa-solid fa-award"></i></div>
+                    <div><h6 class="mb-0 text-white fw-bold">Best Quality</h6><small class="text-white-50">Curated premium farm goods</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="py-5 bg-light" id="categories">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="section-title mb-1">Shop by Category</h2>
+                    <p class="text-muted mb-0">Discover freshly picked organic selections tailored to your health goals.</p>
+                </div>
+                <a href="categories.html" class="btn btn-sm btn-outline-dark rounded-pill px-3">View All Categories</a>
+            </div>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/fresh_fruits.png" alt="Fruits"></div>
+                        <h6>Fresh Fruits</h6>
+                        <small class="text-muted">24 items</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/vegetables.png" alt="Vegetables"></div>
+                        <h6>Vegetables</h6>
+                        <small class="text-muted">38 items</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/celery_leaves.png" alt="Salad Greens"></div>
+                        <h6>Fresh Celery</h6>
+                        <small class="text-muted">12 items</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/spices.png" alt="Fresh Herbs"></div>
+                        <h6>Fresh Spices</h6>
+                        <small class="text-muted">18 items</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/fruity_juice.png" alt="Organic Juices"></div>
+                        <h6>Organic Juices</h6>
+                        <small class="text-muted">15 items</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="category-card text-center">
+                        <div class="cat-img-wrap"><img src="img/nut.png" alt="Dry Fruits"></div>
+                        <h6>Dry Nuts</h6>
+                        <small class="text-muted">22 items</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FARM TO TABLE SECTION -->
+    <section class="py-5 dark-accent-section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5 text-white">
+                    <div class="text-neon mb-2 uppercase-bold tracking">Farm to Table Pipeline</div>
+                    <h2 class="h1 fw-black text-white mb-4">From Our Farm<br>To Your Home.</h2>
+                    <p class="text-white-50 mb-4">We bypass standard wholesale clearing channels to slash the transport timeline down to hours, locking in crisp texture and raw nutrient profiles perfectly.</p>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <span class="fs-2 text-neon fw-bold">50+</span>
+                            <span class="text-white-50 sm-text lh-sm">Local Harvest Farms Partners</span>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center gap-2">
+                            <span class="fs-2 text-neon fw-bold">100%</span>
+                            <span class="text-white-50 sm-text lh-sm">Organic Certified Clean Produce</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-neon px-4 py-2" onclick="window.location.href='about.html'">Learn More</a></button>
+                </div>
+                <div class="col-lg-7">
+                    <div class="promo-video-placeholder rounded-4 position-relative overflow-hidden shadow-lg">
+                        <img src="img/farmer_harvest.png" class="w-100 object-fit-cover h-100" alt="Farmer Field Showcase">
+                        <div class="play-btn-overlay position-absolute top-55 start-50 translate-middle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP PRODUCTS -->
+    <section class="py-5 bg-white" id="shop">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="section-title mb-1">Best Selling Products</h2>
+                    <p class="text-muted mb-0">Our highly sought-after seasonal selections updated this morning.</p>
+                </div>
+                <div class="filter-tabs d-none d-md-flex gap-2">
+                    <button class="btn btn-dark btn-sm rounded-pill px-3">All</button>
+                    <button class="btn btn-light btn-sm rounded-pill px-3 text-muted">Vegetables</button>
+                    <button class="btn btn-light btn-sm rounded-pill px-3 text-muted">Fruits</button>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/avocado.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Fruit</span>
+                            <h6 class="fw-bold my-1"><b>Avocados x2</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 2,225<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Avocados x2" data-price="2225"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/bell_pepper.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Vegetable</span>
+                            <h6 class="fw-bold my-1"><b>Bell-Pepper x3</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 1,985<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Bell-Pepper x3" data-price="1985"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/broccoli.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Vegetable</span>
+                            <h6 class="fw-bold my-1"><b>Fresh Garden Broccoli</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 5,120<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Fresh Garden Broccoli" data-price="5120"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/apples.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Fruit</span>
+                            <h6 class="fw-bold my-1"><b>Apples x5</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 2,500<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Apples x5" data-price="2500"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-1">
+                <!-- Product 5 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/beetroot juice.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Fruit Drink</span>
+                            <h6 class="fw-bold my-1"><b>Beetroot Juice x2</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 4,000<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Beetroot Juice x2" data-price="4000"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/asparagus.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Vegetable</span>
+                            <h6 class="fw-bold my-1"><b>Asparagus x1 bunch</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 12,000<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Asparagus x1 bunch" data-price="12000"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/cauliflower.png" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Vegetable</span>
+                            <h6 class="fw-bold my-1"><b>Cauliflower</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 10,250<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="Cauliflower" data-price="10250"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col">
+                    <div class="product-card">
+                        <div class="prod-img-box"><img src="img/soursop.jpg" alt=""></div>
+                        <div class="prod-details p-3">
+                            <span class="text-muted sm-text">Fruit</span>
+                            <h6 class="fw-bold my-1"><b>SourSop x3</b></h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag"><span class="nairaSign">N</span> 4,000<small class="text-muted fw-normal">/ kg</small></span>
+                                <button class="addToCartBtn" data-name="SourSop x3" data-price="4000"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5" id="contact">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary-subtle">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="#">
+                        <span class="brand-logo-accent">G</span>GREENROOT
+                    </a>
+                    <p class="text-white-50 sm-text pe-lg-4">Pioneering standard-defining distribution protocols for fresh organic goods directly from sustainable growers to corporate entities and homes globally.</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links text-white-50 sm-text">
+                        <li><a href="#">About Journey</a></li>
+                        <li><a href="#">Our Farmers</a></li>
+                        <li><a href="#">Seasonal Crops</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-white fw-bold mb-3">Customer Care</h6>
+                    <ul class="list-unstyled footer-links text-white-50 sm-text">
+                        <li><a href="#">Shipping Rates</a></li>
+                        <li><a href="#">Return Pipeline</a></li>
+                        <li><a href="#">Live Support</a></li>
+                        <li><a href="#">FAQ Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white fw-bold mb-3">Subscribe to our newsletter</h6>
+                    <p class="text-white-50 sm-text">Receive exclusive agricultural updates, seasonal pricing drops, and organic recipes.</p>
+                    <form class="d-flex gap-2 mt-3 newsletter-form">
+                        <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Email Address">
+                        <button class="btn btn-neon btn-sm fw-bold"><a  class="Subscribe-button" href="contact.html">Subscribe</a></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-between align-items-center pt-4">
+                <p class="text-white-50 sm-text mb-0">&copy; 2026 GreenRoot Inc.</p>
+                <div class="footer-social-circles d-flex gap-2">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SLIDE-OUT DRAWER (OFFCANVAS) -->
+    <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="cartDrawerLabel"><i class="fa-solid fa-bag-shopping me-2"></i> Your Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <!-- List of items in cart -->
+        <ul id="cart-items-list" class="list-group list-group-flush mb-auto">
+          <li class="list-group-item text-muted text-center py-4">Your cart is empty.</li>
+        </ul>
+
+        <div class="border-top pt-3 mt-3">
+          <div class="d-flex justify-content-between fw-bold mb-3 fs-5">
+            <span>Total:</span>
+            <span id="cart-total">N 0</span>
+          </div>
+          <button class="btn btn-neon w-100 py-2 text-dark fw-bold">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
